@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div.menu
+        {
+            border: 1px solid grey;
+            width: 500px;
+            height: 200px;
+            float: left;
+            
+        }
+        a
+        {
+            text-decoration: none;
+            border: 1px solid blue;
+            padding: 4px;
+            color: orange;
+        }
+        </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aboutme</title>
+</head>
+<body>
+    <div id="menu">
+        <a href="{{ url_for('index') }}">Index</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('gallery') }}">Gallery</a>
+        </div>
+<h1>Aboutme</h1>
+<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipiscivelit..."</p>
+<p>"There is no one who loves pain itself, who seeks after it and wants to have it, simply becauseit is pain..."</p>
+</body>
+</html>

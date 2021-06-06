@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div.menu
+        {
+            border: 1px solid grey;
+            width: 500px;
+            height: 200px;
+            float: left;
+            
+        }
+        a
+        {
+            text-decoration: none;
+            border: 1px solid blue;
+            padding: 4px;
+            color: orange;
+        }
+        </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aboutme</title>
+</head>
+<body>
+    <div id="menu">
+        <a href="{{ url_for('index') }}">Index</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('gallery') }}">Gallery</a>
+        </div>
+<br>
+<img src="{{ url_for('static', filename='img_5terre.jpg') }}" alt="Cat" width="600" height="400"><br>
+<img src="{{ url_for('static', filename='img_forest.jpg') }}" alt="Cat" width="600" height="400"><br>
+<img src="{{ url_for('static', filename='img_lights.jpg') }}" alt="Cat" width="600" height="400"><br>
+<img src="{{ url_for('static', filename='img_mountains.jpg') }}" alt="Cat" width="600" height="400"><br>
+</body>
+</html>
