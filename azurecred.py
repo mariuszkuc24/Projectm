@@ -1,0 +1,5 @@
+AZDBSERVER = 'basefor.database.windows.net' 
+AZDBNAME = 'dbo.data' 
+AZDBUSER = 'adminserwer' 
+AZDBPW = 'Spierdalaj125' 
+AZDBDRIVER = '{ODBC Driver 17 for SQL Server}' 

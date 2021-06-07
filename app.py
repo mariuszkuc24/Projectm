@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from flask import request
 from flask import render_template
 from flask import abort, redirect, url_for, make_response
-
+from AzureDB import AzureDB
 app = Flask(__name__)
 
 @app.route('/')
@@ -17,6 +17,15 @@ def contact():
 @app.route('/gallery')
 def gallery():
     return render_template('gallery.html')
+
+@app.route('/result')
+def result():
+    with AzureDB() as a:
+        data = a.azureGetData()
+    return render_template("result.html", data = data)
+@app.route('/layout')
+def layout():
+    return render_template('layout.html')
 
 @app.route('/error_denied')
 def error_denied():

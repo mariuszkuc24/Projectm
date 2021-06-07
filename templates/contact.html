@@ -66,20 +66,26 @@ input[type=submit]:hover {
               </div>
             </nav>
         <div class="container">
-            <form action="action_page.php">
-          
-              <label for="fname">Nick</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-              <label for="lname">E-mail</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-              <label for="subject">Message</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-          
-            </form>
+          <h2>Add Comment</h2>
+          <form method="post" action="/result">
+          <dl>
+          <p>
+          <input name="inputName" value="" type="text" 
+                      placeholder="Name" autocomplete="off" required>
+          </p>
+          <p>
+          <input name="inputEmail" value="" type="text" 
+                      placeholder="Email" autocomplete="off" required>
+          </p>
+          <p>
+          <input name="inputPassword" value="" type="password"
+                      placeholder="Password" autocomplete="off" required>
+          </p>
+          </dl>
+          <p>
+          <input type="submit" value="Submit">
+          </p>
+          </form>
           </div>
 </body>
 </html>
